@@ -3,52 +3,208 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BMW X6 — Artigo e notícias</title>
+  <title>BMW X6 — Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    header.hero {
+      background: url('Imagens/2020-bmw-x6-m-competition.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    header.hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+    }
+
+    header.hero .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    header.hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    header.hero p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #111;
+    }
+
+    section p {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .feature {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    .feature div {
+      flex: 1 1 250px;
+      background: #f5f5f5;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .feature img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    @media(max-width: 768px) {
+      header.hero h1 {
+        font-size: 2rem;
+      }
+
+      header.hero p {
+        font-size: 1.2rem;
+      }
+
+      .feature {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
-   <section>
-        <h2>BMW X6</h2>
-        <img src="Imagens/2020-bmw-x6-m-competition.jpg" alt="BMW X6 M Competition" width="600">
-        
-    </section>
-  <h1>BMW X6: Potência, Estilo e Inovação</h1>
-  <p>O <strong>BMW X6</strong> é um dos modelos mais icônicos da marca alemã. Considerado um <em>SUV coupé de luxo</em>, o carro combina a robustez de um utilitário esportivo com a elegância de um coupé esportivo. Desde seu lançamento em 2008, o X6 conquistou o mercado por seu design arrojado, tecnologia avançada e desempenho impressionante.</p>
+  <!-- Header -->
+  <header class="hero">
+    <div class="container">
+      <h1>BMW X6: Potência, Estilo e Inovação</h1>
+      <p>Um SUV coupé de luxo que une robustez, desempenho e design arrojado.</p>
+    </div>
+  </header>
 
-  <h2>Design e Estilo</h2>
-  <p>O grande diferencial do X6 está em seu formato coupé, com a traseira inclinada que o torna único entre os SUVs.</p>
-  <ul>
-    <li>Linhas agressivas e esportivas.</li>
-    <li>Grade frontal imponente, característica dos modelos BMW.</li>
-    <li>Interior luxuoso, com acabamento premium e iluminação ambiente personalizável.</li>
-  </ul>
+  <!-- Seção Design -->
+  <section id="design">
+    <h2>Design</h2>
+    <p>O BMW X6 combina linhas agressivas e elegância, criando um visual esportivo e sofisticado.</p>
+    <div class="feature">
+      <div>
+        <img src="Imagens/x6-design1.jpg" alt="Detalhes do design do BMW X6">
+        <h3>Exterior Impressionante</h3>
+        <p>Linhas aerodinâmicas e faróis icônicos que destacam a presença do X6.</p>
+      </div>
+      <div>
+        <img src="Imagens/x6-design2.jpg" alt="Interior do BMW X6">
+        <h3>Interior Luxuoso</h3>
+        <p>Materiais premium, acabamento impecável e conforto para todos os ocupantes.</p>
+      </div>
+    </div>
+  </section>
 
-  <h2>Desempenho e Motorização</h2>
-  <p>O X6 não é apenas estilo — sua performance é um dos pontos mais fortes.</p>
-  <ul>
-    <li>Motores a gasolina e diesel, dependendo da versão e do mercado.</li>
-    <li>Versões <strong>M</strong> (BMW X6 M) oferecem desempenho esportivo, com potências que ultrapassam os 600 cv.</li>
-    <li>Tração integral <em>xDrive</em>, garantindo estabilidade e segurança em diferentes tipos de terreno.</li>
-    <li>Aceleração de 0 a 100 km/h em cerca de 4 segundos nas versões mais potentes.</li>
-  </ul>
+  <!-- Seção Desempenho -->
+  <section id="desempenho">
+    <h2>Desempenho</h2>
+    <p>Potência e agilidade em qualquer situação, com tecnologia de ponta para máxima performance.</p>
+    <div class="feature">
+      <div>
+        <img src="Imagens/x6-performance1.jpg" alt="Motor BMW X6">
+        <h3>Motor Potente</h3>
+        <p>Motorização de alta performance que garante aceleração impressionante.</p>
+      </div>
+      <div>
+        <img src="Imagens/x6-performance2.jpg" alt="Suspensão BMW X6">
+        <h3>Suspensão Inteligente</h3>
+        <p>Controle dinâmico para conforto e estabilidade em qualquer terreno.</p>
+      </div>
+    </div>
+  </section>
 
-  <h2>Tecnologia e Inovação</h2>
-  <p>O BMW X6 vem equipado com diversas tecnologias de última geração:</p>
-  <ul>
-    <li>Sistema de infotainment <strong>iDrive</strong> com tela sensível ao toque.</li>
-    <li>Assistência à condução com piloto automático adaptativo, reconhecimento de pedestres e assistente de faixa.</li>
-    <li>Faróis Laserlight, que ampliam o alcance da iluminação noturna.</li>
-    <li>Integração completa com smartphones e assistente de voz inteligente.</li>
-  </ul>
+  <!-- Seção Tecnologia -->
+  <section id="tecnologia">
+    <h2>Tecnologia</h2>
+    <p>Inovação em cada detalhe, conectividade avançada e sistemas de assistência ao motorista.</p>
+    <div class="feature">
+      <div>
+        <img src="Imagens/x6-tech1.jpg" alt="Painel BMW X6">
+        <h3>Painel Digital</h3>
+        <p>Interface moderna e intuitiva para controle total do veículo.</p>
+      </div>
+      <div>
+        <img src="Imagens/x6-tech2.jpg" alt="Assistência ao motorista BMW X6">
+        <h3>Assistência Avançada</h3>
+        <p>Sistemas de segurança e condução inteligente que elevam a experiência de dirigir.</p>
+      </div>
+    </div>
+  </section>
 
-  <h2>Conforto e Segurança</h2>
-  <p>Apesar de seu apelo esportivo, o X6 não abre mão do conforto:</p>
-  <ul>
-    <li>Bancos ergonômicos com ventilação e aquecimento.</li>
-    <li>Amplo espaço interno e porta-malas versátil.</li>
-    <li>Pacote de segurança completo: múltiplos airbags, controle de estabilidade, frenagem automática e sensores de estacionamento.</li>
-  </ul>
+  <!-- Seção Conforto -->
+  <section id="conforto">
+    <h2>Conforto</h2>
+    <p>Experiência de condução premium, onde cada detalhe foi pensado para seu bem-estar.</p>
+    <div class="feature">
+      <div>
+        <img src="Imagens/x6-comfort1.jpg" alt="Assentos BMW X6">
+        <h3>Assentos Ergonômicos</h3>
+        <p>Conforto absoluto para viagens longas, com ajustes personalizados.</p>
+      </div>
+      <div>
+        <img src="Imagens/x6-comfort2.jpg" alt="Espaço interno BMW X6">
+        <h3>Espaço Generoso</h3>
+        <p>Amplo espaço interno para todos os passageiros e bagagens.</p>
+      </div>
+    </div>
+  </section>
 
-  <h2>Conclusão</h2>
-  <p>O <strong>BMW X6</strong> é muito mais do que um carro: é uma declaração de estilo, inovação e desempenho. Seu de
+  <!-- Rodapé -->
+  <footer>
+    © 2025 BMW X6 — Criado por Você. Todos os direitos reservados.
+  </footer>
 </body>
 </html>
