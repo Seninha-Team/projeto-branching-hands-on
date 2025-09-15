@@ -108,6 +108,7 @@
 
       .feature {
         flex-direction: column;
-        gap: 20px;
+        gap: 21px;
+        background-color: #111;
       }
-    }
+    } 
