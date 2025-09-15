@@ -98,6 +98,53 @@
       margin-bottom: 15px;
     }
 
+    /* Seção Contato */
+    #contato {
+      background: #f9f9f9;
+      padding: 60px 20px;
+      border-top: 2px solid #eee;
+    }
+
+    #contato .contact-form {
+      max-width: 600px;
+      margin: 40px auto 0;
+    }
+
+    #contato .form-group {
+      margin-bottom: 20px;
+    }
+
+    #contato input,
+    #contato textarea {
+      width: 100%;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      outline: none;
+      transition: border 0.3s ease;
+    }
+
+    #contato input:focus,
+    #contato textarea:focus {
+      border-color: #111;
+    }
+
+    #contato button {
+      background: #111;
+      color: #fff;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    #contato button:hover {
+      background: #333;
+    }
+
     footer {
       background: #111;
       color: white;
@@ -199,6 +246,26 @@
         <h3>Espaço Generoso</h3>
         <p>Amplo espaço interno para todos os passageiros e bagagens.</p>
       </div>
+    </div>
+  </section>
+
+  <!-- Seção Contato -->
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Entre em contato para mais informações sobre o BMW X6 ou para agendar um test drive.</p>
+    <div class="contact-form">
+      <form action="#" method="post">
+        <div class="form-group">
+          <input type="text" name="nome" placeholder="Seu Nome" required>
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Seu E-mail" required>
+        </div>
+        <div class="form-group">
+          <textarea name="mensagem" rows="5" placeholder="Sua Mensagem" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
     </div>
   </section>
 
