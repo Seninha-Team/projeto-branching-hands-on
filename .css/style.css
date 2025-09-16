@@ -8,7 +8,7 @@
     body {
       font-family: Arial, sans-serif;
       line-height: 1.6;
-      color: #333;
+      color: #0a0606;
     }
 
     header.hero {
@@ -17,7 +17,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      color: white;
+      color: rgb(228, 222, 222);
       text-align: center;
       position: relative;
     }
@@ -88,6 +88,7 @@
       height: auto;
       border-radius: 10px;
       margin-bottom: 15px;
+      background-color: #0a0606;
     }
 
     footer {
@@ -96,6 +97,7 @@
       text-align: center;
       padding: 20px 0;
     }
+    /* conferido */
 
     @media(max-width: 768px) {
       header.hero h1 {
